@@ -1,5 +1,4 @@
 import streamlit as st
-import plotly.express as px
 
 # Configuración de la página
 st.set_page_config(
@@ -159,22 +158,6 @@ elif opcion == "📘 MI EXPERIENCIA":
     Hoy en día, me siento más segura al resolver problemas de programación y desarrollar proyectos, aunque sé que el aprendizaje 
     nunca termina. Cada día es una oportunidad para mejorar mis habilidades y enfrentar nuevos retos.
     """)
-    
-    tiempo_estudio = {
-    "Estudio de Python": 40,
-    "Práctica con Streamlit": 30,
-    "Investigación": 20,
-    "Proyectos personales": 10
-    }
-
-    fig = px.pie(
-        names=list(tiempo_estudio.keys()),
-        values=list(tiempo_estudio.values()),
-        title="Distribución de mi tiempo de estudio en programación",
-        color_discrete_sequence=["#636EFA", "#EF553B", "#00CC96", "#FFD700"]
-    )
-
-    st.plotly_chart(fig)
 
     # Definir los eventos en los meses de agosto, septiembre, octubre y noviembre
     timeline = {
